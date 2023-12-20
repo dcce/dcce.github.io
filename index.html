@@ -8,6 +8,23 @@
 
         <style type="text/css">
             body { max-width: 150ch !important; font-size: 18px !important, }
+             /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+              float: left;
+              width: 50%;
+              padding: 5px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+
+            li {
+                margin-top:20px;
+            }
         </style>
 
         <!-- Search Engine -->
@@ -41,10 +58,10 @@
         </header>
         <h2>About</h2>
         <p>
-            I'm a prospective PhD student with degrees in Computer Science and Mathematics from Florida International University.
+            I'm a prospective PhD student with a degree in both Computer Science and Mathematics from Florida International University.
             I'm interested in exploring ways to make machine learning more <b><em>robust</em></b> and <b><em>interpretable</em></b>, especially
             in the context of <b><em>natural language</em></b>. I plan on approaching these questions from a mathematical point of view
-            by leveraging tools from optimization, geometry and category theory.
+            by leveraging tools from optimization, geometry and (potentially) category theory.
         </p>
 
         <h2>Publications</h2>
@@ -62,28 +79,67 @@
                     &amp; Finlayson, M. A. “GOLEM: GOld Standard for Learning and Evaluation of Motifs”. 
                     <em>Under review at LREC-COLING 2024.</em> 
                 </li>
+
+                <li>
+                    <strong>[Abstract]:</strong><br>
+                    Yarlott, W.V.H., Ochoa A., Acharya A., Bobrow L., <b><u>Castro-Estrada D.</b></u>, Gomez D., Zheng J., McDonald D., Miller C., &amp Finlayson M. A.. 2021.
+                    “AI models for detecting motifs in a text collection” 
+                    <em>Literature & Culture and/as Intelligent Systems</em>.
+                </li>
             </ul>
 
-        <h2>Research</h2>
+        <h2>Presentations</h2>
             <ul>
                 <li>
-                    <b>ACUMEN</b>
+                    <b>Transfer Learning with Constraints (@MIT)</b><br>
+                    
+                    <p style=margin-left:40px>
+                    Presented work done at MIT Summer Research Program (MSRP) under the supervision of
+                    Drs. Asuman Ozdaglar and Alireza Fallah. We worked on the development of a
+                    framework for transfer learning that gives guarantees on the preservation of
+                    desirable properties from the source model. For instance, given a differentially
+                    private model, we try to give conditions under which a transferred model would
+                    also be differentially private. Our proposed method tunes the source model and 
+                    the target model simultaneously, minimizing a joint cost function with a
+                    distance term and a number of indicator functions for constraint sets.
+                    </p>
+                    <br>
+
+                    <center>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/JhxlhTfD3Mo?si=Ot8zBzPKBljiymmY" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture; web-share" allowfullscreen>
+                        </iframe><br>
+                        <img src="poster_mit.jpg" width="560" height="315">
+                    </center>
                 </li>
 
                 <li>
-                    <b>Transfer Learning with Constraints</b>
-                </li>
+                    <b>Pointwise Bi-Slant Riemannian Submersions (@FIU Math)</b>
 
-                <li>
-                    <b>Pointwise Bi-Slant Riemannian Submersions</b>
+                    <p style=margin-left:40px>
+                    Presented work done at FIU's Applied Mathematics Research Program for Undergraduates (AMRPU)
+                    in collaboration with Grayson Light. Our project explored the properties of a novel type of Riemannian
+                    Submersion from an almost-product Riemannian manifold into a Riemannian manifold called 
+                    <em>Pointwise Bi-Slant Riemannian Submersions</em> (PBSRSs). We discovered several novel ways to 
+                    factor the PBSRSs into vertical and horizontal components. We also outline the conditions under which
+                    such distributions are totally-geodesic, integrable, and pluriharmonic.
+                    <br>
+                    <a href=./pointwise_bi_slant_Riemannian_submersion_in_almost_product_context_technical_report.pdf>[report available here]</a>
+                    </p>
+                    <br>
                 </li>
                 
-            </ul>
-
-        <h2>Projects</h2>
-            <ul>
                 <li>
-                    <b>Information-Theoretic Inequality System Prover</b>
+                    <b>Information-Theoretic Inequality System Prover (@FIU KFSCIS)</b>
+
+                    <p style=margin-left:40px>
+                    Presented work done during Capstone I (part 1 of the senior project class at FIU). Worked with a
+                    team to develop a Fourier-Motzkin based system to evaluate the validity of systems of inequalities
+                    involving information-theoretic quantities (entropy, mutual information, cross-entropy, etc...).
+                    System leverages knowledge of well-known information theory results to enhance its efficacy.
+                    </p>
                 </li>
             </ul>
 
